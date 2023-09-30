@@ -1,13 +1,12 @@
 #include <Arduino.h>
-#include "Temp.h"
+#include "Buzzer.h"
 // put function declarations here:
-Temp temp=Temp();
+Buzzer buzzer=Buzzer();
 void setup() {
-  // put your setup code here, to run once:
-  temp.tempFunc(5,7);
+  buzzer.playNote(buzzer.note_as4,500);
+  buzzer.pauseNote();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 }
 
